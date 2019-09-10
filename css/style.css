@@ -1,0 +1,128 @@
+/*--- Scrollbar ---*/
+::-webkit-scrollbar-track {
+	background-color: #424242;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #ff6f00;    
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6f00;
+}
+/*--- /Scrollbar ---*/
+
+
+/*--- Body ---*/
+body {
+    background: url(../images/jumbotron.jpg) 100% 0 no-repeat;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    font-family: 'Julius Sans One', sans-serif;
+}
+/*--- /Body ---*/
+
+
+/*--- Jumbotron ---*/
+#jumbotron {
+    margin-bottom: -20px;
+    padding-top: 150px;
+    height: 600px;    
+}
+
+#jumbotron .section {
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+#jumbotron .section .card {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 5px;
+    padding: 40px 0;
+}
+
+#jumbotron .section .card .modal-trigger {
+    padding: 60px 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#jumbotron .section .hoverable:hover {
+    background: #ff6f00 !important;
+}
+
+#jumbotron .section .image {
+    background: url(../images/bg.gif) 100% 0 no-repeat;
+    background-size: cover;
+    height: 156px;
+}
+/*--- /Jumbotron ---*/
+
+
+/*--- Modal ---*/
+.modal {
+    width: 90% !important;    
+}
+/*--- /Modal ---*/
+
+
+/*--- Contact ---*/
+#contact label {
+    color: #757575 !important;
+}
+
+#contact input, textarea {
+    border-bottom: 2px solid #ff6f00 !important;
+}
+
+#contact input:focus, textarea:focus {
+    -webkit-box-shadow: 0 1px 0 0 #ff6f00 !important;
+    box-shadow: 0 1px 0 0 #ff6f00 !important;
+}
+/*--- /Contact ---*/
+
+
+/*--- Mesage ---*/
+#mesage {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+/*--- /Mesage ---*/
+
+
+/*
+==========================
+====== MEDIA QUERIE ======
+==========================
+*/
+@media screen and (max-width: 992px) {
+    /*--- Jumbotron ---*/
+    #jumbotron {
+        padding-top: 70px;
+        height: 800px;    
+    }
+    
+    #jumbotron .section .card .modal-trigger {
+        padding: 50px 0;
+    }
+    /*--- /Jumbotron ---*/
+    
+    
+    /*--- Footer ---*/
+    .footer-copyright {
+        padding-top: 5px;
+        line-height: 20px !important;
+    }
+    /*--- /Footer ---*/
+}
